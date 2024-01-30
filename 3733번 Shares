@@ -1,0 +1,20 @@
+//3733번 Shares
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n, s;
+		while(sc.hasNext()) {
+			n = sc.nextInt();
+			s = sc.nextInt();
+			System.out.println(s / (n + 1));
+		}
+		sc.close();
+	}
+}
+
+/*hasNext()의 반환 값 - boolean(True or False)
+즉, while(sc.hasNext())를 사용하면, EOF를 입력할 때까지 입력을 받는다.*/
