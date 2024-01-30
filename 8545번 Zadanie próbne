@@ -17,3 +17,5 @@ public class Main {
 		sc.close();
 	}
 }
+
+/*.charAt(index) - String으로 저장된 문자열 중에서 한 글자만 선택해서 char형으로 바꾸어 주는 역할을 한다.*/
