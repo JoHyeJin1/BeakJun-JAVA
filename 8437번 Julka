@@ -1,0 +1,28 @@
+//8437번 Julka
+
+import java.math.BigInteger;
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		BigInteger a = sc.nextBigInteger();
+		BigInteger b = sc.nextBigInteger();
+		BigInteger c = a.add(b).divide(BigInteger.valueOf(2));
+		BigInteger d = a.subtract(b).divide(BigInteger.valueOf(2));
+		
+		System.out.println(c);
+		System.out.println(d);
+		sc.close();
+	}
+}
+
+/*BigInteger문제이다.
+BigInteger를 숫자 2로 나누어 주기 위해서는 .divide(BigInteger.valueOf(2))를 사용해야한다.
+
+처음에는 a와 b의 입력은 받은 후 c와 d에 각각 a를 나눈 값과 b를 나눈 값을 넣은 다음, c와d를 더한 값과, c에서 b를 뺀 값을 출력하면 될 것 같았다.
+
+하지만 그렇게 하면, b가 홀수 일 경우 옳은 답을 도출 해 낼 수 없다.
+따라서, a와 b를 입력 받은 후, a와 b를 더한 값 자체를 2로 나누어 출력하고,
+a에 b를 뺀 값 자체를 2로 나누어 출력해야 한다.*/
