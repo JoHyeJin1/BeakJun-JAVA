@@ -1,0 +1,21 @@
+//9086번 문자열
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		for(int i = 0; i < n; i++) {
+			String a = sc.next();
+			String b = "";
+			b += a.charAt(0);
+			b += a.charAt(a.length() - 1);
+			System.out.println(b);
+		}
+		sc.close();
+	}
+}
+
+/*.charAt(index)를 사용하여 String의 첫번째 문자와 마지막 문자를 각각 입력 받아 String b에 넣어 출력합니다.*/
