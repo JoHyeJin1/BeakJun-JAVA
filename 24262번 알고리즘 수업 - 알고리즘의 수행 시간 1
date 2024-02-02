@@ -1,0 +1,26 @@
+```
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		System.out.println("1");
+		System.out.println("0");
+		sc.close();
+	}
+}
+```
+
+> **시간 복잡도를 구하는 문제.**
+
+```
+MenOfPassion(A[], n) {
+    i = ⌊n / 2⌋;
+    return A[i]; # 코드1
+}
+```
+> **위 코드를 보면 알 수 있듯이, 입력 받은 n을 반으로 나눈 값을 i에 저장한 후, A배열의 i번째를 반환하는 코드이다.
+위 코드는 어떤 수를 입력하더라도 한번만 반복이 되기 때문에, 코드의 수행 횟수를 출력하는 첫번째 줄에는 무조건 1을 출력하면 된다.
+둘째 줄에는 코드의 수행 횟수를 다항식으로 나타내었을 때, 최고차항의 차수를 출력하는데, 1의 최고차항은 0이므로 두번째 줄 또한 무조건 0을 출력하면 된다.**
