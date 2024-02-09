@@ -1,0 +1,17 @@
+```
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		n = n + 44031;
+		System.out.println((char)n);
+		sc.close();
+	}
+}
+```
+
+> **가의 아스키 코드 == 44032.
+한글도 아스키 코드로 표현할 수 있다는 것을 알게 되었다.**
