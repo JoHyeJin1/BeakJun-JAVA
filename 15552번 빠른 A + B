@@ -21,3 +21,13 @@ public class Main {
 		bw.close();
 	}
 }
+
+/*BufferedWriter 쓸 때, BufferedReader 쓸 때와 같이
+import java.io.BufferedWriter;와
+import java.io.OutputStreamWriter;가 필요하다.
+예외 처리 위해서 import.java.io.IOException;선언 또한 필요.
+IOException대신 throws Exception을 써도 괜찮다.
+마지막에 bw.close();를 해 주어야 한다.
+
+공백을 기준으로 입력 받을 경우 StringTokenizer가 필요하다.
+import java.util.StringTokenizer 필요.*/
