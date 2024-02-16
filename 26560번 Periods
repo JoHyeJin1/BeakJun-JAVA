@@ -20,3 +20,5 @@ public class Main {
 		sc.close();
 	}
 }
+
+/*버퍼 비우기 - sc.nextLine();*/
